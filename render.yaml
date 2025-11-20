@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: tadawul-mcp-server
+    env: python
+    plan: free
+    buildCommand: |
+      pip install -r requirements.txt
+      python -m playwright install --with-deps chromium
+    startCommand: python server.py
+    autoDeploy: true
