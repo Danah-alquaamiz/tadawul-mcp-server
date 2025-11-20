@@ -1,3 +1,4 @@
 mcp
 playwright
-requests
+uvicorn
+fastapi
